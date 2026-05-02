@@ -71,7 +71,7 @@
     </script>
   </head>
   <body>
-    <div class="cursor-glow" aria-hidden="true"></div>
+    <canvas class="background-grid" aria-hidden="true"></canvas>
     <div class="site-shell">
       <header class="site-header" data-reveal>
         <a class="logo" href="#top" aria-label="Karliq startsida">
@@ -299,22 +299,26 @@
                 <a href="tel:+46763050531">076 305 05 31</a>
               </div>
             </div>
-            <form class="contact-form" action="mailto:erikkarlsson09@hotmail.com" method="post" enctype="text/plain">
+            <form class="contact-form" action="https://formsubmit.co/erikkarlsson09@hotmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Ny förfrågan från Karliq" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://karliq.me/?skickat=true#kontakt" />
               <label>
                 Namn
-                <input type="text" name="Namn" placeholder="Ditt namn" required />
+                <input type="text" name="namn" placeholder="Ditt namn" required />
               </label>
               <label>
                 Företag
-                <input type="text" name="Företag" placeholder="Företagets namn" />
+                <input type="text" name="foretag" placeholder="Företagets namn" />
               </label>
               <label>
                 E-post
-                <input type="email" name="E-post" placeholder="namn@företag.se" required />
+                <input type="email" name="email" placeholder="namn@företag.se" required />
               </label>
               <label>
                 Meddelande
-                <textarea name="Meddelande" placeholder="Berätta kort vad du vill ha hjälp med" rows="5" required></textarea>
+                <textarea name="meddelande" placeholder="Berätta kort vad du vill ha hjälp med" rows="5" required></textarea>
               </label>
               <button class="button primary" type="submit">Skicka förfrågan</button>
             </form>
