@@ -1,15 +1,10 @@
 :root {
-  --bg: #05060c;
-  --bg-soft: #0b1020;
-  --panel: rgba(255, 255, 255, 0.075);
-  --panel-strong: rgba(255, 255, 255, 0.12);
   --text: #f7f8ff;
   --muted: #a8afc7;
   --line: rgba(255, 255, 255, 0.14);
   --blue: #53a6ff;
   --cyan: #5ff3ff;
   --violet: #8f6cff;
-  --pink: #ff6bd5;
   --radius: 28px;
   --shadow: 0 30px 120px rgba(0, 0, 0, 0.45);
 }
@@ -803,6 +798,12 @@ h3 {
 .contact-form {
   display: grid;
   gap: 14px;
+}
+
+.form-honey {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
 }
 
 .form-status {
